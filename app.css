@@ -1,12 +1,30 @@
+
 body {
-    background-image: url(https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     font-family: "Nunito", sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+#contact-body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  font-family: "Nunito", sans-serif;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+
+
+/* *** image borders*** */
 .img-fluid {
     padding:1px;
-     border:1px solid #ccffcc;
-     background-color:#008000;
+     border:1px solid #074b5e;
+     background-color:#074b5e;
 }
 /* *** h2 title color *** */
 .blurb h2 {
@@ -17,7 +35,7 @@ body {
 
 /* *** P font color *** */
 .blurb p {
-    color: #b3ffb3;
+    color: #fff;
     font-weight: 100;
     font-size: 1.125rem;
     line-height: 2;
@@ -56,12 +74,73 @@ body {
     font-size: 4rem;
 }
 
-#navLinks {
+#nav-link {
+
 }
 
+.d-none d-lg-inline {
+  background-color: rgba(0, 165, 201, 0.5)
+}
+
+
 .navbar.scrolled {
-    background: rgba(0,51,0, 0.7);
+    background: rgba(1, 106, 130, 0.7);
     transition: background 1000ms;
+}
+
+.contact-title {
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+  }
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+/* *** form input *** */
+input {
+  height: 45px;
+}
+
+form .submit {
+  /* background: #ff5722; */
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #00403d; 
+  cursor: pointer;
+}
+
+.contact-title {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -73,3 +152,6 @@ body {
         font-size: 2rem;
     }
 }
+
+
+/* link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" */
